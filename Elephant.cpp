@@ -23,3 +23,12 @@ int main(){
     }
     return 0;
 }
+
+/*Alternative and a better solution
+    int main() {
+    long long x;
+    cin >> x;
+    long long steps = (x + 4) / 5;
+    cout << steps << "\n";
+    return 0;
+*/
