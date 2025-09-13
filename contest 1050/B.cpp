@@ -19,7 +19,7 @@ int main(){
         }
 
 
-        cout << n + m;
+        cout << n + m << "\n";
 
 
     }
