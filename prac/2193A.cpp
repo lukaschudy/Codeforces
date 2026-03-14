@@ -7,37 +7,22 @@ int main() {
 
     int t;
     cin >> t;
-    while(t--){
+    while (t--) {
         int n, s, x;
         cin >> n >> s >> x;
-        int a[n];
+
         int sum = 0;
-        for(int i = 0; i < n; i++){\
-            cin >> a[i];
-            sum += a[i];
+        for (int i = 0; i < n; i++) {
+            int a;
+            cin >> a;
+            sum += a;
         }
-        if (sum == s){
-            cout << "YES" << endl;
-        }
-        else{
-            for(int j = 1; j < 100; j++){
-                sum += j*x;
-                if (sum == s){
-                    cout << "YES" << endl;
-                    break;
-                }
-                if (sum > s){
-                    cout << "NO" << endl;
-                    break;
-                }
-                sum = 0;
-                for(int i = 0; i < n; i++){
-                    cin >> a[i];
-                    sum += a[i];
-                }
-            }
-        }
-            }    
-        
+
+        if (s >= sum && (s - sum) % x == 0)
+            cout << "YES\n";
+        else
+            cout << "NO\n";
+    }
+
     return 0;
 }
