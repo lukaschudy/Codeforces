@@ -21,7 +21,6 @@ void solve(){
     cout << ans.size() << "\n";
     for (int i = 0; i < ans.size(); i++)
         cout << ans[i] + 1 << " \n"[i == ans.size() - 1];
-
 }
 
 int main() {
