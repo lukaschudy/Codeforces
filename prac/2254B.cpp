@@ -8,12 +8,10 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int n;
-        cin >> n;
-        string s;
-        cin >> s;
+        int n; cin >> n;
+        string s; cin >> s;
 
-        int blocks = 1;
+        int blocks = 1; //need to calculate how 
         for (int i = 1; i < n; i++) {
             if (s[i] != s[i - 1]) {
                 blocks++;
