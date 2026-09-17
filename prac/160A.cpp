@@ -20,7 +20,7 @@ int main() {
         mysum += x;
         coins++;
         int remaining = sum - mysum;
-        if(mysum > sum){
+        if(mysum > remaining){
             break;
         }
         
